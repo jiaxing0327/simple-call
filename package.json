@@ -8,15 +8,21 @@
   },
   "dependencies": {
     "dayjs": "^1.10.7",
+    "vant": "3",
     "vue": "^3.2.16",
     "vue-router": "^4.0.12",
     "vue-types": "^4.1.1",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
+    "@types/node": "^16.11.11",
     "@vitejs/plugin-vue": "^1.9.3",
+    "postcss": "^8.4.4",
+    "postcss-pxtorem": "^6.0.0",
+    "sass": "^1.44.0",
     "typescript": "^4.4.3",
     "vite": "^2.6.4",
+    "vite-plugin-style-import": "^1.4.0",
     "vue-tsc": "^0.3.0"
   }
 }
