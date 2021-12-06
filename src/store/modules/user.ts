@@ -1,4 +1,4 @@
-import type { UserInfo } from '../types';
+import type { UserInfo, mutationsType } from '../types';
 
 interface UserState {
   userInfo: Nullable<UserInfo>;
@@ -13,7 +13,7 @@ const state: UserState  = {
   }
 }
 
-const mutations = {
+const mutations: mutationsType = {
   SET_USERINFO: (state: UserState, item: UserState["userInfo"]) => {
     state.userInfo = item
   }

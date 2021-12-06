@@ -1,9 +1,9 @@
-import {createStore} from 'vuex';
+import { createStore } from 'vuex';
  
 const modulesFiles = import.meta.globEager('./modules/**/*.ts');
 
 // TODO此处不知道怎么解决，就用了any
-const modules: any = {}
+const modules: Nullable<any> = {}
 
 Object.keys(modulesFiles).forEach((key: string) => {
   
