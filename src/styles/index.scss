@@ -1,3 +1,6 @@
+@import './mixin.scss';
+@import './base/variables.scss';
+
 body {
   height: 100%;
   // -moz-osx-font-smoothing: grayscale;
@@ -75,14 +78,6 @@ li {
 
 .fl {
   float: left;
-}
-
-.pr-5 {
-  padding-right: 5px;
-}
-
-.pl-5 {
-  padding-left: 5px;
 }
 
 .block {
