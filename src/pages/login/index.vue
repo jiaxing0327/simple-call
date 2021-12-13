@@ -1,5 +1,9 @@
 <template>
-  <div>login</div>
+  <div class="full">
+    <div class="logo">
+      <img src="/src/assets/image/logo.png" alt="" class="full">
+    </div>
+  </div>
 </template>
 
 <script>
@@ -9,6 +13,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped> 
+.logo {
+  width: 150px;
+  height: 150px;
+}
 </style>

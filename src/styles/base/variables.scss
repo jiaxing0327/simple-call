@@ -1,0 +1,56 @@
+@import './color-var.scss';
+@import './txt.scss';
+.flex {
+  display: flex;
+}
+.flex-y {
+  @extend .flex;
+  flex-direction: column;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-space-between {
+  justify-content: space-between;
+}
+.flex-align-center {
+  align-items: center;
+}
+.flex-justify-center {
+  justify-content: center;
+}
+.flex-center {
+  @extend .flex;
+  @extend .flex-align-center;
+  @extend .flex-justify-center;
+}
+.full-w {
+  width: 100%;
+}
+.full-h {
+  height: 100%;
+}
+.full {
+  @extend .full-w;
+  @extend .full-h;
+}
+.hidden {
+  overflow: hidden;
+}
+
+.p-r {
+  position: relative;
+}
+.p-a {
+  position: absolute;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mt-6 {
+  margin-top: 6px;
+}

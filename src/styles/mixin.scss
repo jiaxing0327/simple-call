@@ -1,0 +1,12 @@
+@mixin create-iteration-item($name, $attr, $value) {
+  .#{$name} {
+    #{$attr}: $value;
+  }
+}
+
+@mixin create-iteration($key, $attr, $names, $values) {
+  @for $i from 1 through length($values) {
+    $name: #{$key}-#{nth($names, $i)};
+    @include create-iteration-item($name, $attr, #{nth($values, $i)});
+  }
+}
